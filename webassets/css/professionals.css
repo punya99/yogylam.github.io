@@ -1,0 +1,540 @@
+/* General */
+
+.error-message {
+    color: red !important;
+}
+
+label.error-custom {
+    color: red !important;
+    display: block;
+    font-weight: 400;
+    text-align: right;
+    font-size: 15px;
+}
+
+.btn-gray {
+    padding: 5px 8px;
+    color: #FFFFFF;
+    background-color: #6E717F;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.btn-gray:not(:last-child) {
+    margin-right: 10px;
+}
+
+.btn-default-custom {
+    color: #fff;
+    background-color: #50b4b6;
+    font-weight: bold;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: none;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 2px;
+    background-color: #6E717F;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.toggle-slider {
+    background-color: #6E717F;
+}
+
+input:checked+.toggle-slider::before {
+    background-color: #FFFFFF;
+}
+
+input:focus+.toggle-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.toggle-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded toggle-sliders */
+
+.toggle-slider.round {
+    border-radius: 34px;
+    border: 2px solid #6E717F;
+}
+
+.toggle-slider.round:before {
+    border-radius: 50%;
+}
+
+.form-center_w620 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/* Add to notepad modal */
+
+.btn-added-notepad {
+    background-color: #53565A;
+}
+
+.btn-add-notepad {
+    position: relative;
+}
+
+.btn-download-notepad {
+    display: inline-block;
+    position: relative;
+}
+
+.notepad-login {
+    padding: 1rem 10rem;
+}
+
+.notepad-feature {
+    color: #53565A;
+}
+
+/* Notepad */
+
+.your-notepad {
+    background-color: #F1F1F5;
+    padding: 60px 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.your-notepad .title {
+    color: #53565A;
+    font-size: 52px;
+}
+
+.your-notepad .description {
+    color: #53565A;
+    font-size: 18px;
+}
+
+.your-notepad .active-project .text {
+    margin-top: 2rem;
+    color: #53565A;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.your-notepad .active-project .text .btn-manage-p {
+    color: #58A7AF;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.your-notepad .p-item-new {
+    margin-top: 2rem;
+}
+
+.your-notepad .p-item-new .p-name {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sg_en .your-notepad .p-item-new .p-name {
+    color: #55585A;
+}
+
+.your-notepad .p-item-new .p-name .btn-edit-p-name {
+    color: #58A7AF;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items {
+    padding: 8px 0;
+    border-bottom: 1px solid #D1DCE5;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items .product-checkbox {
+    width: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items .product-images {
+    width: 150px;
+    padding-right: 16px;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items .product-images img {
+    width: 133px;
+    height: 133px;
+    object-fit: cover;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items .product-info .name {
+    font-size: 24px;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items .product-info .sku-info {
+    font-size: 18px;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items .product-info .list-file-type {
+    margin-top: 24px;
+    font-size: 15px;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items .product-info .list-file-type .list-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items .actions a {
+    cursor: pointer;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items .actions .sw-product-another-p {
+    color: #58A7AF;
+}
+
+.your-notepad .p-item-new .list-prod-of-project .product-items .actions .btn-atn-delete-prod {
+    color: #FF4242;
+}
+
+.your-notepad .notepad-footer {
+    padding-top: 48px;
+    text-align: center;
+}
+
+.your-notepad .notepad-footer a.btn {
+    width: 100%;
+}
+
+.your-notepad .notepad-footer button.btn {
+    width: 100;
+}
+
+.your-notepad .notepad-footer .btn:last-child {
+    margin-left: unset;
+}
+
+.your-notepad .notepad-footer .btn {
+    margin-top: 1rem;
+}
+
+/* Notepad Download */
+
+.your-notepad .list-project .project-items .list-prod-of-project .list-check-download {
+    padding: 8px 0;
+    border-bottom: 1px solid #D1DCE5;
+    display: flex;
+}
+
+.your-notepad .list-project .project-items .list-prod-of-project .list-check-download .tag-name {
+    width: 80%;
+    font-size: 24px;
+}
+
+.your-notepad .list-project .project-items .list-prod-of-project .list-check-download .checkbox {
+    width: 20%;
+    text-align: right;
+}
+
+/* Register area */
+
+.login-area,
+.register-area {
+    background-color: #F1F1F5;
+    padding: 68px 15px;
+}
+
+.register-area .title {
+    font-size: 44px;
+}
+
+#form-register .form-group {
+    margin-top: 29px;
+}
+
+#form-register .form-group label {
+    color: #AEBAC6;
+    /*mid gray*/
+    font-size: 15px;
+}
+
+#form-register .form-group .form-control {
+    background-color: white;
+    color: #6E717F;
+    /*gray*/
+    padding: 17px 24px;
+    border-radius: 8px;
+    border: 1px solid #AEBAC6;
+    margin-top: 4px;
+}
+
+/* Login area */
+
+.login-area .title {
+    font-size: 44px;
+}
+
+#form-login>.form-group {
+    margin-top: 29px;
+}
+
+#form-login .form-group label {
+    color: #AEBAC6;
+    /*mid gray*/
+    font-size: 15px;
+}
+
+#form-login .form-group .form-control {
+    background-color: white;
+    color: #6E717F;
+    /*gray*/
+    padding: 17px 24px;
+    border-radius: 8px;
+    border: 1px solid #AEBAC6;
+    margin-top: 4px;
+}
+
+/* Download as guest area */
+
+.download-guest-area {
+    background-color: white;
+    padding: 68px;
+}
+
+.download-guest-area .title {
+    font-size: 44px;
+}
+
+#form-download-as-guest .form-group {
+    margin-top: 29px;
+}
+
+#form-download-as-guest .form-group label {
+    color: #AEBAC6;
+    /*mid gray*/
+    font-size: 15px;
+}
+
+#form-download-as-guest .form-group .form-control {
+    background-color: white;
+    color: #6E717F;
+    /*gray*/
+    padding: 17px 24px;
+    border-radius: 8px;
+    border: 1px solid #AEBAC6;
+    margin-top: 4px;
+}
+
+/* Form forgot password */
+
+.form-pro-syle>.form-group {
+    margin-top: 29px;
+}
+
+.form-pro-syle .form-group label {
+    color: #AEBAC6;
+    /*mid gray*/
+    font-size: 15px;
+}
+
+.form-pro-syle .form-group .form-control {
+    background-color: white;
+    color: #6E717F;
+    /*gray*/
+    padding: 17px 24px;
+    border-radius: 8px;
+    border: 1px solid #AEBAC6;
+    margin-top: 4px;
+}
+
+/* np modal */
+
+.np-modal .np-modal-dialog {
+    max-width: 600px;
+}
+
+.np-modal .modal-content {
+    background-color: #F1F1F5;
+    /*light gray*/
+    padding: 35px;
+    width: 100%;
+}
+
+.np-modal .modal-content .modal-header {
+    border-bottom: none;
+    padding: 0;
+}
+
+.np-modal .modal-content .modal-header button {
+    border: none;
+}
+
+.np-modal .modal-content .modal-header button.close {
+    position: absolute;
+    right: 40px;
+    top: 36px;
+    z-index: 999;
+}
+
+.np-modal .modal-content .modal-title {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sg_en .np-modal .modal-content .modal-title {
+    color: #55585A;
+}
+
+.np-modal .modal-content .modal-title.arrow-collapse {
+    cursor: pointer;
+}
+
+.np-modal .modal-content .modal-title .arrow {
+    border: solid #50b4b6;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.np-modal .modal-content .modal-body hr {
+    margin: 24px 0;
+}
+
+.np-modal .modal-content .modal-body .list-project .project-items {
+    margin-top: 1.5rem;
+    font-size: 18px;
+}
+
+.np-modal .modal-content .modal-body .btn-actions button {
+    width: 250px;
+}
+
+.np-modal .modal-content .modal-body .btn-actions a {
+    width: 250px;
+}
+
+.np-modal .modal-content .modal-body .btn-actions .notepad-login {
+    margin-right: 10px;
+}
+
+.np-modal .modal-content .modal-body .btn-actions .notepad-register {
+    margin-left: 10px;
+    color: #079698;
+    font-weight: bold;
+}
+
+.np-modal .modal-content .modal-body .form-group .form-control {
+    background-color: white;
+    color: #6E717F;
+    /*gray*/
+    padding: 10px 17px;
+    border: 1px solid #AEBAC6;
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+.font-weight-bold {
+    font-weight: normal;
+}
+
+@media (min-width: 768px) {
+    /* General */
+    .form-center_w620 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 620px;
+    }
+    /* Notepad */
+    .your-notepad .description {
+        width: 50%;
+        margin-top: 1.5rem;
+    }
+    .your-notepad .description .btn-actions .notepad-login {
+        margin-right: 10px;
+    }
+    .your-notepad .description .btn-actions .notepad-register {
+        margin-left: 10px;
+        color: #079698;
+        font-weight: bold;
+    }
+    .your-notepad .p-item-new .list-prod-of-project .product-items {
+        display: flex;
+    }
+    .your-notepad .p-item-new .list-prod-of-project .product-items .product-info {
+        width: 50%;
+    }
+    .your-notepad .p-item-new .list-prod-of-project .product-items .actions {
+        width: calc(46% - 150px);
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .your-notepad .p-item-new .list-prod-of-project .product-items .actions .btn-atn-delete-prod {
+        margin-left: 10px;
+    }
+    .your-notepad .notepad-footer a.btn {
+        width: 316px;
+    }
+    .your-notepad .notepad-footer button.btn {
+        width: 316px;
+    }
+    .your-notepad .notepad-footer .btn {
+        margin-top: unset;
+    }
+    /* Notepad download */
+    /* Notepad main  */
+    .start-using-now {
+        width: 316px;
+    }
+    /* Register area */
+    .login-area,
+    .register-area {
+        padding: 68px;
+    }
+    .h-md-100 {
+        height: 100%;
+    }
+}

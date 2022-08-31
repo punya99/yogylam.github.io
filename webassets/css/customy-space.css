@@ -1,0 +1,43 @@
+.banner-customy-space .row-icons {
+    margin: 20px auto 0;
+    max-width: 570px
+}
+
+.banner-customy-space .row-icons .design-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.banner-customy-space .row-icons .design-icon img {
+    width: 60px
+}
+
+.banner-customy-space .row-icons .design-txt {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+    line-height: 1;
+    width: 95px;
+    position: relative;
+    padding-left: 10px
+}
+
+.banner-customy-space .row-icons .design-txt:before {
+    height: 30px;
+    content: '';
+    width: 3px;
+    background: #f9cb00;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0
+}
+
+@media (max-width:767px) {
+    .banner-customy-space .row-icons .design-txt {
+        text-align: center;
+        margin-left: 10px
+    }
+}
